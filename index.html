@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class = "title-text">
+        <h1 class="top">Generate a</h1>
+        <h1 class="bottom">random password</h1>
+        </div>
+        <p class="par1">Never use an insecure password again</p>
+        <div class="slidecontainer">
+            <input type="range" min="8" max="20" value="8" class="slider" id="myRange" oninput="updateLimitValue()">
+            <p style="color:white">Limit: <span id="limitValue">-</span></p>
+          </div>
+        <button class="genPass" onclick="genPass()">Generate passwords</button>
+        <hr>
+        <div>
+            <button class="resultButt" id="button1"></button>
+            <button class="resultButt" id="button2"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
